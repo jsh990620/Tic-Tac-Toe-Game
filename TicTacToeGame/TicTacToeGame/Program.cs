@@ -27,7 +27,7 @@ while (true)
     while (true)
     {
         Console.WriteLine("=== 틱택토 게임 ===");
-        Console.WriteLine("1. 두 사람 대전");
+        Console.WriteLine("1. 2인 대전");
         Console.WriteLine("2. 컴퓨터 대전");
         Console.Write("모드 선택: ");
         string select = Console.ReadLine();
