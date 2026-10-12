@@ -174,18 +174,7 @@ void PrintGuide()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0)
-            {
-                Console.Write(j + 1);
-            }
-            else if (i == 1)
-            {
-                Console.Write(j + 4);
-            }
-            else
-            {
-                Console.Write(j + 7);
-            }
+            Console.Write($"{i * 3 + j + 1}");
             if (j < 2)
             {
                 Console.Write(" | ");
