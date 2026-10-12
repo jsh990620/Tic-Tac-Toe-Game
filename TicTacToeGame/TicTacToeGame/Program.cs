@@ -170,12 +170,33 @@ void PrintGuide()
 {
     Console.WriteLine("=== 틱택토 게임 ===");
     Console.WriteLine();
-    Console.WriteLine("위치 번호:");
-    Console.WriteLine("1 | 2 | 3");
-    Console.WriteLine("---------");
-    Console.WriteLine("4 | 5 | 6");
-    Console.WriteLine("---------");
-    Console.WriteLine("7 | 8 | 9");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (i == 0)
+            {
+                Console.Write(j + 1);
+            }
+            else if (i == 1)
+            {
+                Console.Write(j + 4);
+            }
+            else
+            {
+                Console.Write(j + 7);
+            }
+            if (j < 2)
+            {
+                Console.Write(" | ");
+            }
+        }
+        Console.WriteLine();
+        if (i < 2)
+        {
+            Console.WriteLine("---------");
+        }
+    }
     Console.WriteLine();
 }
 // 틱택토 보드 출력 함수
